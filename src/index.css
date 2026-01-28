@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #111111;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+      "SF Pro Text", "Inter", sans-serif;
+  }
+}
+.blink-dot {
+  animation: blink-dot 0.8s ease-in-out infinite;
+}
+
+@keyframes blink-dot {
+  0%, 100% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+}
